@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let year = + prompt('Nhap so nam muon gui: ');
+        let Total_money = + prompt(' Nhap so tien muon gui: ');
+        let money = Total_money ;
+        let interest_rate = + prompt(' Nhap phan tram lai suat: ');
+        let i ;
+        for (i=0 ; i< year ; i++){
+        interest = Total_money * (interest_rate/100);
+        Total_money = interest + Total_money ;
+        Total_interest = Total_money - money ;
+        }
+    document.write (" Lãi suất trong "+ year +" năm là :" + Total_interest + "</br>");
+    document.write (" Tổng số tiền trong "+ year +" năm là :" + Total_money  );
+</script>
+</body>
+</html>
